@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+
+    <!--<LinearLayout-->
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full name"
+            android:inputType="textPersonName" />
+
+        <requestFocus />
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="Phone number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="E-mail address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Description" />
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signup"
+            android:text="Next" />
+
+    <!--</LinearLayout>-->
+    <ListView
+        android:layout_marginTop="4dp"
+        android:background="#B0DEB887"
+        style="@style/ListViewStyle.Light"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
